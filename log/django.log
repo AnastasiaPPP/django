@@ -6,3 +6,7 @@ INFO 2024-01-17 19:18:52,250 autoreload 16736 22108 C:\Users\HUAWEI\OneDrive\Раб
 INFO 2024-01-17 19:18:56,092 autoreload 22272 15792 Watching for file changes with StatReloader
 INFO 2024-01-17 19:19:41,037 autoreload 22272 15792 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
 INFO 2024-01-17 19:19:41,794 autoreload 26924 22876 Watching for file changes with StatReloader
+INFO 2024-01-18 19:52:09,073 autoreload 23532 27580 Watching for file changes with StatReloader
+INFO 2024-01-18 19:52:10,845 basehttp 23532 22964 "GET / HTTP/1.1" 200 117
+INFO 2024-01-18 19:52:29,962 basehttp 23532 19416 "GET /all_clients HTTP/1.1" 301 0
+INFO 2024-01-18 19:52:29,971 basehttp 23532 14868 "GET /all_clients/ HTTP/1.1" 200 106
