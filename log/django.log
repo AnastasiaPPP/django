@@ -10,3 +10,537 @@ INFO 2024-01-18 19:52:09,073 autoreload 23532 27580 Watching for file changes wi
 INFO 2024-01-18 19:52:10,845 basehttp 23532 22964 "GET / HTTP/1.1" 200 117
 INFO 2024-01-18 19:52:29,962 basehttp 23532 19416 "GET /all_clients HTTP/1.1" 301 0
 INFO 2024-01-18 19:52:29,971 basehttp 23532 14868 "GET /all_clients/ HTTP/1.1" 200 106
+INFO 2024-01-24 10:49:03,191 autoreload 25464 1444 Watching for file changes with StatReloader
+INFO 2024-01-24 10:49:07,525 basehttp 25464 13340 "GET / HTTP/1.1" 200 117
+WARNING 2024-01-24 10:49:27,559 log 25464 27724 Not Found: /get_clients
+WARNING 2024-01-24 10:49:27,559 basehttp 25464 27724 "GET /get_clients HTTP/1.1" 404 2783
+INFO 2024-01-24 10:49:39,085 basehttp 25464 27724 "GET /all_clients HTTP/1.1" 301 0
+INFO 2024-01-24 10:49:39,094 basehttp 25464 10796 "GET /all_clients/ HTTP/1.1" 200 106
+INFO 2024-01-24 10:49:39,105 basehttp 25464 9900 - Broken pipe from ('127.0.0.1', 22685)
+INFO 2024-01-24 10:52:37,290 autoreload 2324 4260 Watching for file changes with StatReloader
+INFO 2024-01-24 10:52:39,898 basehttp 2324 1000 "GET /all_clients/ HTTP/1.1" 200 215
+INFO 2024-01-24 11:01:00,265 autoreload 15532 6608 Watching for file changes with StatReloader
+INFO 2024-01-24 11:01:03,284 basehttp 15532 29584 "GET /all_clients/ HTTP/1.1" 200 215
+INFO 2024-01-24 11:01:25,960 basehttp 15532 29584 "GET /week HTTP/1.1" 301 0
+ERROR 2024-01-24 11:01:26,117 log 15532 29476 Internal Server Error: /week/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 32, in show_sorted_orders
+    context['orders'] = Order.objects.filter(date_ordered__gte=date(d.year, d.month, d.day))
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: date() takes from 1 to 2 positional arguments but 3 were given
+ERROR 2024-01-24 11:01:26,119 basehttp 15532 29476 "GET /week/ HTTP/1.1" 500 64994
+INFO 2024-01-24 11:02:24,037 autoreload 15532 6608 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 11:02:24,700 autoreload 18608 26876 Watching for file changes with StatReloader
+ERROR 2024-01-24 11:02:25,692 log 18608 16972 Internal Server Error: /week/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 32, in show_sorted_orders
+    context['orders'] = Order.objects.filter(date_ordered__gte=d)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'date_ordered' into field. Choices are: client_id, client_id_id, date, goods, id, total_price
+ERROR 2024-01-24 11:02:25,692 basehttp 18608 16972 "GET /week/ HTTP/1.1" 500 110715
+INFO 2024-01-24 11:02:55,530 autoreload 18608 26876 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 11:02:56,209 autoreload 3164 27564 Watching for file changes with StatReloader
+ERROR 2024-01-24 11:02:57,558 log 3164 5152 Internal Server Error: /week/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 33, in show_sorted_orders
+    return render(request, 'main/sorted_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/sorted_orders.html
+ERROR 2024-01-24 11:02:57,568 basehttp 3164 5152 "GET /week/ HTTP/1.1" 500 80255
+INFO 2024-01-24 11:05:01,928 autoreload 3164 27564 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 11:05:02,599 autoreload 600 8972 Watching for file changes with StatReloader
+INFO 2024-01-24 11:08:02,296 basehttp 600 26876 "GET /week/ HTTP/1.1" 200 327
+INFO 2024-01-24 11:18:42,398 autoreload 13884 16640 Watching for file changes with StatReloader
+INFO 2024-01-24 11:18:56,228 basehttp 13884 13788 "GET /all_clients/ HTTP/1.1" 200 215
+INFO 2024-01-24 19:46:38,279 autoreload 7216 28660 Watching for file changes with StatReloader
+INFO 2024-01-24 19:46:41,824 basehttp 7216 26248 "GET / HTTP/1.1" 200 117
+INFO 2024-01-24 19:46:48,473 basehttp 7216 13512 "GET /week HTTP/1.1" 301 0
+INFO 2024-01-24 19:46:48,498 basehttp 7216 14280 "GET /week/ HTTP/1.1" 200 327
+INFO 2024-01-24 19:54:28,780 autoreload 7216 28660 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 19:54:29,541 autoreload 28448 29228 Watching for file changes with StatReloader
+WARNING 2024-01-24 19:55:00,363 log 28448 8244 Not Found: /get_orders
+WARNING 2024-01-24 19:55:00,364 basehttp 28448 8244 "GET /get_orders HTTP/1.1" 404 2949
+INFO 2024-01-24 19:55:31,487 basehttp 28448 13368 "GET /orders HTTP/1.1" 301 0
+INFO 2024-01-24 19:55:31,500 basehttp 28448 11844 "GET /orders/ HTTP/1.1" 200 176
+INFO 2024-01-24 20:01:03,353 autoreload 2632 5656 Watching for file changes with StatReloader
+INFO 2024-01-24 20:01:12,057 basehttp 2632 15420 "GET /orders/ HTTP/1.1" 200 271
+INFO 2024-01-24 20:01:18,182 basehttp 2632 9732 "GET /week/ HTTP/1.1" 200 329
+INFO 2024-01-24 20:06:05,801 basehttp 2632 10880 "GET /week/ HTTP/1.1" 200 323
+INFO 2024-01-24 20:09:05,599 basehttp 2632 20108 "GET / HTTP/1.1" 200 117
+INFO 2024-01-24 20:09:13,830 basehttp 2632 20108 "GET /orders/ HTTP/1.1" 200 265
+INFO 2024-01-24 20:10:11,156 basehttp 2632 24052 "GET /week/ HTTP/1.1" 200 323
+INFO 2024-01-24 20:17:05,099 basehttp 2632 12564 "GET /week/ HTTP/1.1" 200 323
+INFO 2024-01-24 20:23:23,517 autoreload 2632 5656 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 20:23:24,265 autoreload 26984 28984 Watching for file changes with StatReloader
+INFO 2024-01-24 20:26:29,598 autoreload 26984 28984 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 20:26:30,179 autoreload 25824 1632 Watching for file changes with StatReloader
+INFO 2024-01-24 20:27:03,137 basehttp 25824 13616 "GET /week/ HTTP/1.1" 200 323
+INFO 2024-01-24 20:27:05,053 basehttp 25824 13616 "GET / HTTP/1.1" 200 117
+INFO 2024-01-24 20:27:20,842 basehttp 25824 9636 "GET /orders/ HTTP/1.1" 200 265
+INFO 2024-01-24 20:27:59,838 basehttp 25824 4720 "GET /all_clients HTTP/1.1" 301 0
+INFO 2024-01-24 20:27:59,846 basehttp 25824 27916 "GET /all_clients/ HTTP/1.1" 200 215
+INFO 2024-01-24 20:28:10,331 basehttp 25824 18180 "GET /week/ HTTP/1.1" 200 323
+INFO 2024-01-24 20:31:58,667 autoreload 25824 1632 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 20:31:59,286 autoreload 3056 27588 Watching for file changes with StatReloader
+INFO 2024-01-24 20:32:00,468 basehttp 3056 17732 "GET /week/ HTTP/1.1" 200 174
+INFO 2024-01-24 20:32:51,090 autoreload 3056 27588 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 20:32:51,700 autoreload 26904 14620 Watching for file changes with StatReloader
+INFO 2024-01-24 20:32:52,227 basehttp 26904 9508 "GET /week/ HTTP/1.1" 200 178
+INFO 2024-01-24 20:36:41,454 autoreload 9340 17112 Watching for file changes with StatReloader
+INFO 2024-01-24 20:36:44,105 basehttp 9340 18756 "GET /week/ HTTP/1.1" 200 272
+INFO 2024-01-24 20:38:27,007 autoreload 9340 17112 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 20:38:27,626 autoreload 22144 14140 Watching for file changes with StatReloader
+INFO 2024-01-24 20:38:28,946 basehttp 22144 26036 "GET /week/ HTTP/1.1" 200 330
+INFO 2024-01-24 20:38:53,880 basehttp 22144 17844 "GET /week/ HTTP/1.1" 200 324
+INFO 2024-01-24 20:38:53,894 basehttp 22144 14096 - Broken pipe from ('127.0.0.1', 29979)
+INFO 2024-01-24 20:40:37,099 basehttp 22144 23696 "GET /week/ HTTP/1.1" 200 318
+INFO 2024-01-24 20:41:20,295 autoreload 22144 14140 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 20:41:20,796 autoreload 29116 11312 Watching for file changes with StatReloader
+INFO 2024-01-24 20:47:10,359 autoreload 29116 11312 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 20:47:10,946 autoreload 21792 29448 Watching for file changes with StatReloader
+INFO 2024-01-24 20:47:52,509 autoreload 21792 29448 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 20:47:53,004 autoreload 8484 16036 Watching for file changes with StatReloader
+INFO 2024-01-24 20:48:27,361 autoreload 8484 16036 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-24 20:48:27,972 autoreload 23768 14868 Watching for file changes with StatReloader
+INFO 2024-01-24 20:49:07,271 autoreload 23768 14868 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\urls.py changed, reloading.
+INFO 2024-01-24 20:49:07,798 autoreload 9512 3120 Watching for file changes with StatReloader
+INFO 2024-01-24 20:52:38,511 autoreload 9512 3120 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\urls.py changed, reloading.
+INFO 2024-01-24 20:52:39,184 autoreload 6776 572 Watching for file changes with StatReloader
+INFO 2024-01-24 20:53:54,410 autoreload 6776 572 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\urls.py changed, reloading.
+INFO 2024-01-24 20:53:54,978 autoreload 26672 17536 Watching for file changes with StatReloader
+INFO 2024-01-24 20:56:06,149 autoreload 9952 9068 Watching for file changes with StatReloader
+INFO 2024-01-24 20:56:08,580 basehttp 9952 16024 "GET / HTTP/1.1" 200 117
+INFO 2024-01-24 20:56:20,100 basehttp 9952 16024 "GET /orders/1 HTTP/1.1" 301 0
+INFO 2024-01-24 20:56:20,116 basehttp 9952 19632 "GET /orders/1/ HTTP/1.1" 200 226
+INFO 2024-01-24 20:56:27,171 basehttp 9952 19632 "GET /orders/0 HTTP/1.1" 301 0
+INFO 2024-01-24 20:56:27,180 basehttp 9952 12868 "GET /orders/0/ HTTP/1.1" 200 226
+INFO 2024-01-24 20:58:29,412 basehttp 9952 12868 "GET /orders/1/ HTTP/1.1" 200 220
+INFO 2024-01-24 21:01:45,595 basehttp 9952 12868 "GET /orders/1/ HTTP/1.1" 200 220
+INFO 2024-01-25 17:22:51,970 basehttp 9952 11848 - Broken pipe from ('127.0.0.1', 32245)
+INFO 2024-01-25 17:23:11,165 autoreload 9952 9068 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:23:13,251 autoreload 9972 8232 Watching for file changes with StatReloader
+INFO 2024-01-25 17:26:58,143 autoreload 9972 8232 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:26:58,917 autoreload 19164 19400 Watching for file changes with StatReloader
+INFO 2024-01-25 17:33:36,049 autoreload 19164 19400 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:33:36,682 autoreload 14924 26236 Watching for file changes with StatReloader
+ERROR 2024-01-25 17:33:41,641 log 14924 24012 Internal Server Error: /orders/1/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 25, in get_orders
+    return render(request, 'mainapp/sorted_orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: mainapp/sorted_orders.html
+ERROR 2024-01-25 17:33:41,643 basehttp 14924 24012 "GET /orders/1/ HTTP/1.1" 500 81541
+INFO 2024-01-25 17:33:44,610 basehttp 14924 24012 "GET / HTTP/1.1" 200 117
+INFO 2024-01-25 17:33:57,847 basehttp 14924 24012 "GET /client_orders/1 HTTP/1.1" 301 0
+ERROR 2024-01-25 17:33:57,877 log 14924 12236 Internal Server Error: /client_orders/1/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 35, in get_client_orders
+    return render(request, 'mainapp/orders_goods.html', {'orders': orders, 'goods': orders.goods})
+                                                                                    ^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'goods'
+ERROR 2024-01-25 17:33:57,878 basehttp 14924 12236 "GET /client_orders/1/ HTTP/1.1" 500 65148
+INFO 2024-01-25 17:39:26,176 autoreload 14924 26236 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:39:26,716 autoreload 11848 29252 Watching for file changes with StatReloader
+INFO 2024-01-25 17:40:11,854 autoreload 11848 29252 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:40:12,379 autoreload 28756 600 Watching for file changes with StatReloader
+INFO 2024-01-25 17:40:19,850 basehttp 28756 23912 "GET /client_orders/1/ HTTP/1.1" 200 124
+INFO 2024-01-25 17:40:38,471 basehttp 28756 23912 "GET /client_orders/4 HTTP/1.1" 301 0
+INFO 2024-01-25 17:40:38,482 basehttp 28756 13720 "GET /client_orders/4/ HTTP/1.1" 200 230
+INFO 2024-01-25 17:41:31,372 autoreload 28756 600 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:41:31,878 autoreload 26292 8656 Watching for file changes with StatReloader
+INFO 2024-01-25 17:43:55,935 autoreload 26292 8656 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:43:56,461 autoreload 28268 27056 Watching for file changes with StatReloader
+INFO 2024-01-25 17:43:57,227 basehttp 28268 13680 "GET /client_orders/4/ HTTP/1.1" 200 320
+INFO 2024-01-25 17:50:16,153 autoreload 28268 27056 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:50:16,930 autoreload 29380 1320 Watching for file changes with StatReloader
+ERROR 2024-01-25 17:50:19,490 log 29380 29536 Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 36, in get_client_orders
+    for good in orders:
+TypeError: 'Order' object is not iterable
+ERROR 2024-01-25 17:50:19,491 basehttp 29380 29536 "GET /client_orders/4/ HTTP/1.1" 500 65465
+INFO 2024-01-25 17:50:45,302 autoreload 29380 1320 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:50:45,878 autoreload 25240 16168 Watching for file changes with StatReloader
+INFO 2024-01-25 17:51:11,891 autoreload 25240 16168 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:51:12,382 autoreload 27904 28960 Watching for file changes with StatReloader
+ERROR 2024-01-25 17:51:12,671 log 27904 21896 Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 36, in get_client_orders
+    return render(request, 'mainapp/orders_goods.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'Order' object is not iterable
+ERROR 2024-01-25 17:51:12,675 basehttp 27904 21896 "GET /client_orders/4/ HTTP/1.1" 500 106899
+INFO 2024-01-25 17:54:59,432 autoreload 27904 28960 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:55:00,087 autoreload 26088 29512 Watching for file changes with StatReloader
+INFO 2024-01-25 17:57:39,969 autoreload 26088 29512 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 17:57:40,487 autoreload 17044 27484 Watching for file changes with StatReloader
+ERROR 2024-01-25 17:57:43,263 log 17044 17060 Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.get_client_orders didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-25 17:57:43,264 basehttp 17044 17060 "GET /client_orders/4/ HTTP/1.1" 500 66338
+INFO 2024-01-25 18:00:06,536 autoreload 19316 22880 Watching for file changes with StatReloader
+ERROR 2024-01-25 18:00:08,514 log 19316 14900 Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.get_client_orders didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-25 18:00:08,516 basehttp 19316 14900 "GET /client_orders/4/ HTTP/1.1" 500 66338
+INFO 2024-01-25 18:01:06,553 autoreload 19316 22880 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:01:07,137 autoreload 16548 21704 Watching for file changes with StatReloader
+INFO 2024-01-25 18:01:07,433 basehttp 16548 22380 "GET /client_orders/4/ HTTP/1.1" 200 217
+INFO 2024-01-25 18:11:27,182 autoreload 22280 29148 Watching for file changes with StatReloader
+INFO 2024-01-25 18:11:32,439 basehttp 22280 10208 "GET /client_orders/4/ HTTP/1.1" 200 414
+INFO 2024-01-25 18:12:16,121 autoreload 22280 29148 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:12:16,667 autoreload 21684 7004 Watching for file changes with StatReloader
+INFO 2024-01-25 18:12:17,258 basehttp 21684 13584 "GET /client_orders/4/ HTTP/1.1" 200 414
+INFO 2024-01-25 18:13:17,078 autoreload 21684 7004 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:13:17,654 autoreload 23948 3160 Watching for file changes with StatReloader
+INFO 2024-01-25 18:13:52,926 autoreload 23948 3160 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:13:53,443 autoreload 13720 25484 Watching for file changes with StatReloader
+INFO 2024-01-25 18:13:56,986 basehttp 13720 22076 "GET /client_orders/4/ HTTP/1.1" 200 414
+INFO 2024-01-25 18:17:11,005 autoreload 13720 25484 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:17:11,573 autoreload 2256 896 Watching for file changes with StatReloader
+INFO 2024-01-25 18:17:27,133 autoreload 2256 896 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:17:27,635 autoreload 14152 11536 Watching for file changes with StatReloader
+INFO 2024-01-25 18:17:50,733 autoreload 14152 11536 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:17:51,251 autoreload 26260 22824 Watching for file changes with StatReloader
+INFO 2024-01-25 18:19:10,690 autoreload 26260 22824 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:19:11,228 autoreload 12672 2624 Watching for file changes with StatReloader
+ERROR 2024-01-25 18:19:21,401 log 12672 24928 Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 36, in get_client_orders
+    li = [good.name for good in orders]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 36, in <listcomp>
+    li = [good.name for good in orders]
+          ^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'name'
+ERROR 2024-01-25 18:19:21,403 basehttp 12672 24928 "GET /client_orders/4/ HTTP/1.1" 500 69536
+INFO 2024-01-25 18:19:52,173 autoreload 12672 2624 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:19:52,759 autoreload 23216 28056 Watching for file changes with StatReloader
+INFO 2024-01-25 18:19:53,508 basehttp 23216 18536 "GET /client_orders/4/ HTTP/1.1" 200 414
+INFO 2024-01-25 18:20:49,885 autoreload 23216 28056 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:20:50,410 autoreload 7864 2784 Watching for file changes with StatReloader
+INFO 2024-01-25 18:21:07,267 autoreload 7864 2784 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:21:07,789 autoreload 17964 2096 Watching for file changes with StatReloader
+INFO 2024-01-25 18:21:15,084 basehttp 17964 24868 "GET /client_orders/4/ HTTP/1.1" 200 202
+INFO 2024-01-25 18:24:37,926 autoreload 17964 2096 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:24:38,524 autoreload 16816 22048 Watching for file changes with StatReloader
+INFO 2024-01-25 18:28:52,175 autoreload 16816 22048 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:28:52,652 autoreload 11144 27688 Watching for file changes with StatReloader
+INFO 2024-01-25 18:28:54,804 basehttp 11144 8688 "GET /client_orders/4/ HTTP/1.1" 200 240
+INFO 2024-01-25 18:30:19,372 autoreload 11144 27688 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:30:19,927 autoreload 17256 1420 Watching for file changes with StatReloader
+INFO 2024-01-25 18:31:44,259 autoreload 17256 1420 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:31:44,770 autoreload 17844 27136 Watching for file changes with StatReloader
+INFO 2024-01-25 18:33:10,944 autoreload 17844 27136 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:33:11,436 autoreload 26840 24036 Watching for file changes with StatReloader
+INFO 2024-01-25 18:33:37,155 autoreload 26840 24036 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:33:37,729 autoreload 16360 22160 Watching for file changes with StatReloader
+INFO 2024-01-25 18:33:40,264 basehttp 16360 26220 "GET /client_orders/4/ HTTP/1.1" 200 255
+INFO 2024-01-25 18:35:00,981 autoreload 16360 22160 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:35:01,503 autoreload 20896 20160 Watching for file changes with StatReloader
+INFO 2024-01-25 18:35:04,070 basehttp 20896 29232 "GET /client_orders/4/ HTTP/1.1" 200 255
+INFO 2024-01-25 18:35:34,883 autoreload 20896 20160 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:35:35,411 autoreload 24980 5800 Watching for file changes with StatReloader
+INFO 2024-01-25 18:35:44,817 basehttp 24980 9524 "GET / HTTP/1.1" 200 117
+INFO 2024-01-25 18:35:47,039 basehttp 24980 9524 - Broken pipe from ('127.0.0.1', 37101)
+INFO 2024-01-25 18:35:53,462 basehttp 24980 20324 "GET /client_orders/4/ HTTP/1.1" 200 255
+INFO 2024-01-25 18:38:18,008 autoreload 24980 5800 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:38:18,520 autoreload 8112 28728 Watching for file changes with StatReloader
+INFO 2024-01-25 18:39:28,930 autoreload 8112 28728 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:39:29,444 autoreload 29156 23340 Watching for file changes with StatReloader
+INFO 2024-01-25 18:40:45,567 autoreload 29156 23340 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:40:46,127 autoreload 4936 21564 Watching for file changes with StatReloader
+INFO 2024-01-25 18:42:15,560 autoreload 4936 21564 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:42:16,110 autoreload 12784 26528 Watching for file changes with StatReloader
+INFO 2024-01-25 18:42:25,728 autoreload 12784 26528 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:42:26,457 autoreload 28872 29080 Watching for file changes with StatReloader
+INFO 2024-01-25 18:44:16,804 autoreload 28872 29080 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:44:17,335 autoreload 12200 19056 Watching for file changes with StatReloader
+ERROR 2024-01-25 18:44:19,516 log 12200 26284 Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 35, in get_client_orders
+    li = [order.get_goods() for order in orders]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 35, in <listcomp>
+    li = [order.get_goods() for order in orders]
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py", line 36, in get_goods
+    return [good.name for good in self.goods]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2024-01-25 18:44:19,520 basehttp 12200 26284 "GET /client_orders/4/ HTTP/1.1" 500 71733
+INFO 2024-01-25 18:46:22,382 autoreload 12200 19056 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:46:23,015 autoreload 24976 29632 Watching for file changes with StatReloader
+ERROR 2024-01-25 18:46:24,439 log 24976 2952 Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 35, in get_client_orders
+    li = [order.get_goods() for order in orders]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 35, in <listcomp>
+    li = [order.get_goods() for order in orders]
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py", line 36, in get_goods
+    return [good for good in self.goods.name]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+ERROR 2024-01-25 18:46:24,441 basehttp 24976 2952 "GET /client_orders/4/ HTTP/1.1" 500 71693
+INFO 2024-01-25 18:48:13,099 autoreload 24976 29632 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:48:13,696 autoreload 27636 29148 Watching for file changes with StatReloader
+INFO 2024-01-25 18:48:14,716 basehttp 27636 23452 "GET /client_orders/4/ HTTP/1.1" 200 255
+INFO 2024-01-25 18:49:14,590 autoreload 27636 29148 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:49:15,094 autoreload 9848 29180 Watching for file changes with StatReloader
+INFO 2024-01-25 18:49:15,904 basehttp 9848 20756 "GET /client_orders/4/ HTTP/1.1" 200 255
+INFO 2024-01-25 18:49:58,507 autoreload 9848 29180 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:49:59,054 autoreload 16316 6176 Watching for file changes with StatReloader
+INFO 2024-01-25 18:49:59,373 basehttp 16316 21496 "GET /client_orders/4/ HTTP/1.1" 200 255
+INFO 2024-01-25 18:50:53,755 autoreload 16316 6176 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 18:50:54,263 autoreload 16024 28392 Watching for file changes with StatReloader
+INFO 2024-01-25 18:50:57,272 basehttp 16024 27028 "GET /client_orders/4/ HTTP/1.1" 200 234
+INFO 2024-01-25 18:56:47,274 basehttp 16024 23436 "GET /client_orders/4/ HTTP/1.1" 200 338
+INFO 2024-01-25 18:56:49,574 basehttp 16024 23436 "GET /client_orders/4/ HTTP/1.1" 200 338
+INFO 2024-01-25 18:58:06,215 autoreload 16024 28392 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:58:06,989 autoreload 23720 10572 Watching for file changes with StatReloader
+INFO 2024-01-25 18:58:07,474 basehttp 23720 16816 "GET /client_orders/4/ HTTP/1.1" 200 338
+INFO 2024-01-25 18:58:31,967 autoreload 23720 10572 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:58:32,517 autoreload 24092 23148 Watching for file changes with StatReloader
+ERROR 2024-01-25 18:58:33,014 log 24092 21808 Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 35, in get_client_orders
+    li = [order.get_goods() for order in orders]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 35, in <listcomp>
+    li = [order.get_goods() for order in orders]
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py", line 36, in get_goods
+    return [zip(good.name, good.price) for good in self.goods.all()]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py", line 36, in <listcomp>
+    return [zip(good.name, good.price) for good in self.goods.all()]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'decimal.Decimal' object is not iterable
+ERROR 2024-01-25 18:58:33,016 basehttp 24092 21808 "GET /client_orders/4/ HTTP/1.1" 500 74764
+INFO 2024-01-25 18:59:30,855 autoreload 24092 23148 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 18:59:31,522 autoreload 14096 29272 Watching for file changes with StatReloader
+INFO 2024-01-25 18:59:33,001 basehttp 14096 27952 "GET /client_orders/4/ HTTP/1.1" 200 338
+INFO 2024-01-25 19:00:33,535 autoreload 14096 29272 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 19:00:34,070 autoreload 29396 28112 Watching for file changes with StatReloader
+INFO 2024-01-25 19:00:34,889 basehttp 29396 26064 "GET /client_orders/4/ HTTP/1.1" 200 338
+INFO 2024-01-25 19:00:57,960 autoreload 29396 28112 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 19:00:58,614 autoreload 27324 20432 Watching for file changes with StatReloader
+INFO 2024-01-25 19:00:58,975 basehttp 27324 8132 "GET /client_orders/4/ HTTP/1.1" 200 338
+INFO 2024-01-25 19:01:58,417 autoreload 27324 20432 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 19:01:58,885 autoreload 12148 1636 Watching for file changes with StatReloader
+INFO 2024-01-25 19:02:05,448 basehttp 12148 6352 "GET /client_orders/4/ HTTP/1.1" 200 338
+INFO 2024-01-25 19:02:35,301 autoreload 12148 1636 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 19:02:35,817 autoreload 17624 18100 Watching for file changes with StatReloader
+ERROR 2024-01-25 19:02:36,380 log 17624 28160 Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 37, in get_client_orders
+    print(**li)
+TypeError: print() argument after ** must be a mapping, not list
+ERROR 2024-01-25 19:02:36,382 basehttp 17624 28160 "GET /client_orders/4/ HTTP/1.1" 500 65499
+INFO 2024-01-25 19:04:51,433 autoreload 17624 18100 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 19:04:51,971 autoreload 19040 28300 Watching for file changes with StatReloader
+INFO 2024-01-25 19:06:18,865 autoreload 19040 28300 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 19:06:19,516 autoreload 11664 23540 Watching for file changes with StatReloader
+INFO 2024-01-25 19:06:48,674 autoreload 11664 23540 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 19:06:49,235 autoreload 25620 3744 Watching for file changes with StatReloader
+INFO 2024-01-25 19:07:18,044 autoreload 25620 3744 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 19:07:18,626 autoreload 16224 19532 Watching for file changes with StatReloader
+INFO 2024-01-25 19:07:24,355 basehttp 16224 26604 "GET / HTTP/1.1" 200 117
+INFO 2024-01-25 19:07:29,185 basehttp 16224 26604 "GET /client_orders/4/ HTTP/1.1" 200 338
+INFO 2024-01-25 19:07:59,359 autoreload 16224 19532 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 19:07:59,879 autoreload 15864 28152 Watching for file changes with StatReloader
+INFO 2024-01-25 19:08:00,514 basehttp 15864 22108 "GET /client_orders/4/ HTTP/1.1" 200 338
+INFO 2024-01-25 19:10:41,586 basehttp 15864 22004 "GET /client_orders/4/ HTTP/1.1" 200 246
+INFO 2024-01-25 19:11:59,206 basehttp 15864 22004 "GET /client_orders/4/ HTTP/1.1" 200 451
+INFO 2024-01-25 19:12:59,262 basehttp 15864 22004 "GET /client_orders/4/ HTTP/1.1" 200 550
+INFO 2024-01-25 19:13:35,784 autoreload 15864 28152 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 19:13:36,291 autoreload 22956 6044 Watching for file changes with StatReloader
+INFO 2024-01-25 19:13:37,992 basehttp 22956 25728 "GET /client_orders/4/ HTTP/1.1" 200 639
+INFO 2024-01-25 19:14:09,706 basehttp 22956 25728 "GET /client_orders/4/ HTTP/1.1" 200 499
+INFO 2024-01-25 19:14:38,092 basehttp 22956 25728 "GET /client_orders/4/ HTTP/1.1" 200 643
+INFO 2024-01-25 19:16:25,783 autoreload 22956 6044 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 19:16:26,257 autoreload 1132 3060 Watching for file changes with StatReloader
+INFO 2024-01-25 19:17:52,500 autoreload 1132 3060 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-25 19:17:53,023 autoreload 10004 24804 Watching for file changes with StatReloader
+INFO 2024-01-25 19:18:36,441 basehttp 10004 21028 "GET /orders/1 HTTP/1.1" 301 0
+ERROR 2024-01-25 19:18:36,505 log 10004 28812 Internal Server Error: /orders/1/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 25, in get_orders
+    return render(request, 'mainapp/sorted_orders.html', {'orders': orders})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: mainapp/sorted_orders.html
+ERROR 2024-01-25 19:18:36,509 basehttp 10004 28812 "GET /orders/1/ HTTP/1.1" 500 81709
+INFO 2024-01-25 19:19:51,470 basehttp 10004 28812 "GET /orders/1/ HTTP/1.1" 200 264
+INFO 2024-01-25 19:20:08,932 autoreload 10004 24804 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\models.py changed, reloading.
+INFO 2024-01-25 19:20:09,534 autoreload 14688 11436 Watching for file changes with StatReloader
+INFO 2024-01-25 19:20:10,272 basehttp 14688 18104 "GET /orders/1/ HTTP/1.1" 200 264
+INFO 2024-01-25 19:20:55,209 basehttp 14688 18104 "GET /orders/1/ HTTP/1.1" 200 233

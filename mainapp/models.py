@@ -20,7 +20,7 @@ class Good(models.Model):
     date_of_add = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'{self.name}, {self.description}, {self.price}, {self.count}, {self.date_of_add}'
+        return f'{self.name}, {self.description}, {self.price}'
 
 
 class Order(models.Model):
@@ -30,5 +30,7 @@ class Order(models.Model):
     date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'{self.client_id}, {self.goods}, {self.total_price}, {self.date}'
+        return f'{self.client_id.name}, {self.total_price}, {self.date}'
 
+    def get_goods(self):
+        return [good.name for good in self.goods.all()]
