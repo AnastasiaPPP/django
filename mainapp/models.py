@@ -18,6 +18,7 @@ class Good(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     count = models.IntegerField()
     date_of_add = models.DateField(auto_now_add=True)
+    image = models.ImageField(blank=True, upload_to='')
 
     def __str__(self):
         return f'{self.name}, {self.description}, {self.price}'

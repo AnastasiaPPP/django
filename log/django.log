@@ -544,3 +544,705 @@ INFO 2024-01-25 19:20:08,932 autoreload 10004 24804 C:\Users\HUAWEI\OneDrive\Раб
 INFO 2024-01-25 19:20:09,534 autoreload 14688 11436 Watching for file changes with StatReloader
 INFO 2024-01-25 19:20:10,272 basehttp 14688 18104 "GET /orders/1/ HTTP/1.1" 200 264
 INFO 2024-01-25 19:20:55,209 basehttp 14688 18104 "GET /orders/1/ HTTP/1.1" 200 233
+INFO 2024-01-27 18:44:03,867 autoreload 10508 29356 Watching for file changes with StatReloader
+INFO 2024-01-27 18:58:20,797 autoreload 10508 29356 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-27 18:58:21,459 autoreload 8208 2732 Watching for file changes with StatReloader
+INFO 2024-01-28 13:10:16,174 autoreload 3972 19160 Watching for file changes with StatReloader
+INFO 2024-01-28 13:10:17,671 basehttp 3972 21228 "GET / HTTP/1.1" 200 117
+INFO 2024-01-28 13:10:23,686 basehttp 3972 19172 "GET /add_good HTTP/1.1" 301 0
+ERROR 2024-01-28 13:10:23,745 log 3972 12024 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 13:10:23,747 basehttp 3972 12024 "GET /add_good/ HTTP/1.1" 500 66148
+INFO 2024-01-28 13:11:47,005 autoreload 3972 19160 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 13:11:47,675 autoreload 26968 24940 Watching for file changes with StatReloader
+ERROR 2024-01-28 13:11:47,915 log 26968 15592 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 13:11:47,916 basehttp 26968 15592 "GET /add_good/ HTTP/1.1" 500 66285
+ERROR 2024-01-28 13:13:45,969 log 26968 8892 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 13:13:45,970 basehttp 26968 8892 "GET /add_good/ HTTP/1.1" 500 66285
+INFO 2024-01-28 13:14:22,741 autoreload 26968 24940 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\forms.py changed, reloading.
+INFO 2024-01-28 13:14:23,258 autoreload 16488 8656 Watching for file changes with StatReloader
+INFO 2024-01-28 13:16:39,740 autoreload 16488 8656 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 13:16:40,235 autoreload 27724 11268 Watching for file changes with StatReloader
+INFO 2024-01-28 13:17:01,332 autoreload 27724 11268 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 13:17:02,040 autoreload 21144 5412 Watching for file changes with StatReloader
+ERROR 2024-01-28 13:17:04,697 log 21144 21016 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 13:17:04,698 basehttp 21144 21016 "GET /add_good/ HTTP/1.1" 500 66285
+ERROR 2024-01-28 13:20:55,283 log 21144 15716 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 13:20:55,284 basehttp 21144 15716 "GET /add_good/ HTTP/1.1" 500 66285
+INFO 2024-01-28 13:22:04,037 autoreload 21144 5412 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 13:22:04,582 autoreload 27416 29580 Watching for file changes with StatReloader
+ERROR 2024-01-28 13:22:05,777 log 27416 10312 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 13:22:05,778 basehttp 27416 10312 "GET /add_good/ HTTP/1.1" 500 66285
+ERROR 2024-01-28 13:23:41,678 log 27416 1784 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 13:23:41,679 basehttp 27416 1784 "GET /add_good/ HTTP/1.1" 500 66285
+INFO 2024-01-28 13:25:20,165 autoreload 27416 29580 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 13:25:20,711 autoreload 24708 25464 Watching for file changes with StatReloader
+INFO 2024-01-28 13:25:25,281 autoreload 24708 25464 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 13:25:25,765 autoreload 23700 10004 Watching for file changes with StatReloader
+ERROR 2024-01-28 13:25:26,440 log 23700 22392 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 52, in create_good
+    return render(request, 'mainapp/good_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-01-28 13:25:26,444 basehttp 23700 22392 "GET /add_good/ HTTP/1.1" 500 131660
+ERROR 2024-01-28 13:33:25,828 log 23700 21076 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 52, in create_good
+    return render(request, 'mainapp/good_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-01-28 13:33:25,830 basehttp 23700 21076 "GET /add_good/ HTTP/1.1" 500 131660
+ERROR 2024-01-28 13:33:57,428 log 23700 21076 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 52, in create_good
+    return render(request, 'mainapp/good_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-01-28 13:33:57,430 basehttp 23700 21076 "GET /add_good/ HTTP/1.1" 500 131660
+INFO 2024-01-28 13:36:43,386 autoreload 26968 16316 Watching for file changes with StatReloader
+INFO 2024-01-28 13:36:51,527 basehttp 26968 13704 "GET / HTTP/1.1" 200 117
+ERROR 2024-01-28 13:37:06,690 log 26968 13704 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 52, in create_good
+    return render(request, 'mainapp/good_form.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-01-28 13:37:06,696 basehttp 26968 13704 "GET /add_good/ HTTP/1.1" 500 131523
+INFO 2024-01-28 13:39:10,597 basehttp 26968 13704 "GET /add_good/ HTTP/1.1" 200 1278
+ERROR 2024-01-28 13:39:51,780 log 26968 24344 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 13:39:51,781 basehttp 26968 24344 "POST /add_good/ HTTP/1.1" 500 68128
+INFO 2024-01-28 15:10:12,958 autoreload 19164 15416 Watching for file changes with StatReloader
+ERROR 2024-01-28 15:10:19,340 log 19164 17308 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 15:10:19,341 basehttp 19164 17308 "POST /add_good/ HTTP/1.1" 500 68128
+INFO 2024-01-28 15:11:02,946 autoreload 19164 15416 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:11:04,008 autoreload 12348 28968 Watching for file changes with StatReloader
+ERROR 2024-01-28 15:11:04,593 log 12348 28352 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 15:11:04,593 basehttp 12348 28352 "POST /add_good/ HTTP/1.1" 500 68128
+INFO 2024-01-28 15:11:19,735 autoreload 12348 28968 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:11:20,316 autoreload 29248 16124 Watching for file changes with StatReloader
+INFO 2024-01-28 15:11:21,486 basehttp 29248 10796 "POST /add_good/ HTTP/1.1" 200 27
+INFO 2024-01-28 15:12:22,280 autoreload 29248 16124 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:12:22,758 autoreload 18616 29288 Watching for file changes with StatReloader
+INFO 2024-01-28 15:13:24,680 autoreload 18616 29288 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:13:25,255 autoreload 14272 13496 Watching for file changes with StatReloader
+INFO 2024-01-28 15:14:42,887 autoreload 14272 13496 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\urls.py changed, reloading.
+INFO 2024-01-28 15:14:43,339 autoreload 24680 27116 Watching for file changes with StatReloader
+INFO 2024-01-28 15:15:54,607 autoreload 24680 27116 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\urls.py changed, reloading.
+INFO 2024-01-28 15:15:55,140 autoreload 8180 24464 Watching for file changes with StatReloader
+INFO 2024-01-28 15:15:55,460 basehttp 8180 27844 "GET / HTTP/1.1" 200 117
+INFO 2024-01-28 15:16:02,903 basehttp 8180 10504 "GET /add_good/ HTTP/1.1" 200 1278
+INFO 2024-01-28 15:16:20,170 basehttp 8180 2176 "POST /add_good/ HTTP/1.1" 200 27
+INFO 2024-01-28 15:17:23,601 basehttp 8180 9200 "GET /all_goods HTTP/1.1" 301 0
+INFO 2024-01-28 15:17:23,612 basehttp 8180 10796 "GET /all_goods/ HTTP/1.1" 200 33
+INFO 2024-01-28 15:21:42,806 autoreload 8180 24464 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\forms.py changed, reloading.
+INFO 2024-01-28 15:21:43,407 autoreload 9364 5780 Watching for file changes with StatReloader
+INFO 2024-01-28 15:22:17,606 autoreload 9364 5780 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\forms.py changed, reloading.
+INFO 2024-01-28 15:22:18,075 autoreload 18280 15336 Watching for file changes with StatReloader
+INFO 2024-01-28 15:22:36,882 autoreload 18280 15336 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\forms.py changed, reloading.
+INFO 2024-01-28 15:22:37,465 autoreload 1696 3728 Watching for file changes with StatReloader
+INFO 2024-01-28 15:23:54,840 autoreload 1696 3728 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\forms.py changed, reloading.
+INFO 2024-01-28 15:23:55,351 autoreload 28380 25512 Watching for file changes with StatReloader
+INFO 2024-01-28 15:24:37,906 autoreload 28380 25512 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:24:38,491 autoreload 16224 24624 Watching for file changes with StatReloader
+ERROR 2024-01-28 15:24:45,302 log 16224 19632 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 56, in create_good
+    form = GoodForm()
+           ^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\forms\models.py", line 350, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+ERROR 2024-01-28 15:24:45,305 basehttp 16224 19632 "GET /add_good/ HTTP/1.1" 500 71920
+INFO 2024-01-28 15:25:36,398 autoreload 16224 24624 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\forms.py changed, reloading.
+INFO 2024-01-28 15:25:37,034 autoreload 10664 24824 Watching for file changes with StatReloader
+INFO 2024-01-28 15:26:44,123 autoreload 10664 24824 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:26:44,624 autoreload 28184 20136 Watching for file changes with StatReloader
+INFO 2024-01-28 15:26:44,793 basehttp 28184 25792 "GET /add_good/ HTTP/1.1" 200 1276
+ERROR 2024-01-28 15:27:10,510 log 28184 12812 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 15:27:10,511 basehttp 28184 12812 "POST /add_good/ HTTP/1.1" 500 68118
+INFO 2024-01-28 15:29:46,324 basehttp 28184 27692 "GET /all_goods/ HTTP/1.1" 200 33
+INFO 2024-01-28 15:29:47,924 basehttp 28184 27692 "GET /all_goods/ HTTP/1.1" 200 33
+INFO 2024-01-28 15:31:51,133 autoreload 28184 20136 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:31:51,711 autoreload 11344 15172 Watching for file changes with StatReloader
+INFO 2024-01-28 15:31:58,017 basehttp 11344 15040 "GET /add_good/ HTTP/1.1" 200 1276
+ERROR 2024-01-28 15:32:07,727 log 11344 19744 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 15:32:07,729 basehttp 11344 19744 "POST /add_good/ HTTP/1.1" 500 68113
+INFO 2024-01-28 15:32:17,459 autoreload 11344 15172 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:32:18,033 autoreload 12644 19488 Watching for file changes with StatReloader
+INFO 2024-01-28 15:32:19,144 basehttp 12644 10304 "POST /add_good/ HTTP/1.1" 200 27
+INFO 2024-01-28 15:32:27,790 basehttp 12644 8168 "GET /all_goods/ HTTP/1.1" 200 33
+INFO 2024-01-28 15:47:14,357 basehttp 12644 16488 "GET / HTTP/1.1" 200 117
+INFO 2024-01-28 15:47:22,402 basehttp 12644 16488 "GET /add_good/ HTTP/1.1" 200 1276
+INFO 2024-01-28 15:47:31,974 basehttp 12644 25884 "POST /add_good/ HTTP/1.1" 200 27
+INFO 2024-01-28 15:47:47,155 autoreload 12644 19488 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:47:47,861 autoreload 25888 22308 Watching for file changes with StatReloader
+INFO 2024-01-28 15:47:48,651 basehttp 25888 23860 "GET /add_good/ HTTP/1.1" 200 1276
+ERROR 2024-01-28 15:47:50,051 log 25888 23860 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view mainapp.views.create_good didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-01-28 15:47:50,052 basehttp 25888 23860 "POST /add_good/ HTTP/1.1" 500 68115
+INFO 2024-01-28 15:53:46,629 autoreload 25888 22308 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:53:47,502 autoreload 19180 23800 Watching for file changes with StatReloader
+INFO 2024-01-28 15:53:51,720 basehttp 19180 20248 "POST /add_good/ HTTP/1.1" 200 31
+INFO 2024-01-28 15:55:11,185 autoreload 19180 23800 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 15:55:11,755 autoreload 27924 19364 Watching for file changes with StatReloader
+INFO 2024-01-28 15:55:12,183 basehttp 27924 9172 "GET /add_good/ HTTP/1.1" 200 1276
+INFO 2024-01-28 15:55:13,082 basehttp 27924 9172 "POST /add_good/ HTTP/1.1" 200 27
+INFO 2024-01-28 17:33:13,825 autoreload 8180 25208 Watching for file changes with StatReloader
+INFO 2024-01-28 17:33:15,308 basehttp 8180 8960 "GET / HTTP/1.1" 200 117
+INFO 2024-01-28 17:33:19,196 basehttp 8180 3448 "GET /add_good/ HTTP/1.1" 200 1276
+INFO 2024-01-28 17:33:44,412 basehttp 8180 9524 "POST /add_good/ HTTP/1.1" 200 27
+INFO 2024-01-28 17:34:25,104 basehttp 8180 21764 "GET /all_goods HTTP/1.1" 301 0
+INFO 2024-01-28 17:34:25,120 basehttp 8180 21868 "GET /all_goods/ HTTP/1.1" 200 69
+INFO 2024-01-28 20:49:26,309 autoreload 25888 22048 Watching for file changes with StatReloader
+INFO 2024-01-28 20:49:27,725 basehttp 25888 24600 "GET / HTTP/1.1" 200 117
+ERROR 2024-01-28 20:49:34,890 log 25888 27148 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 60, in create_good
+    form = GoodForm()
+           ^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\forms\models.py", line 350, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+ERROR 2024-01-28 20:49:34,892 basehttp 25888 27148 "GET /add_good/ HTTP/1.1" 500 71950
+INFO 2024-01-28 20:49:54,131 autoreload 25888 22048 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\forms.py changed, reloading.
+INFO 2024-01-28 20:49:54,897 autoreload 24588 26196 Watching for file changes with StatReloader
+INFO 2024-01-28 20:49:55,180 basehttp 24588 3160 "GET /add_good/ HTTP/1.1" 200 1228
+ERROR 2024-01-28 20:50:29,031 log 24588 14080 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 49, in create_good
+    count = request.POST['count']
+            ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'count'
+ERROR 2024-01-28 20:50:29,034 basehttp 24588 14080 "POST /add_good/ HTTP/1.1" 500 76801
+INFO 2024-01-28 20:50:57,022 autoreload 24588 26196 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\forms.py changed, reloading.
+INFO 2024-01-28 20:50:57,695 autoreload 27672 996 Watching for file changes with StatReloader
+INFO 2024-01-28 20:52:07,973 autoreload 27672 996 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\forms.py changed, reloading.
+INFO 2024-01-28 20:52:08,508 autoreload 1308 20880 Watching for file changes with StatReloader
+ERROR 2024-01-28 20:52:10,331 log 1308 2804 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 49, in create_good
+    count = request.POST['count']
+            ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'count'
+ERROR 2024-01-28 20:52:10,341 basehttp 1308 2804 "POST /add_good/ HTTP/1.1" 500 76800
+INFO 2024-01-28 20:53:08,789 autoreload 1308 20880 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 20:53:09,377 autoreload 29628 20316 Watching for file changes with StatReloader
+INFO 2024-01-28 20:53:27,247 autoreload 29628 20316 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 20:53:27,850 autoreload 8904 20660 Watching for file changes with StatReloader
+ERROR 2024-01-28 20:53:31,387 log 8904 13444 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 51, in create_good
+    name = form.cleaned_data['name']
+           ^^^^^^^^^^^^^^^^^
+AttributeError: 'GoodForm' object has no attribute 'cleaned_data'
+ERROR 2024-01-28 20:53:31,390 basehttp 8904 13444 "POST /add_good/ HTTP/1.1" 500 67816
+INFO 2024-01-28 20:54:11,034 autoreload 8904 20660 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-01-28 20:54:11,584 autoreload 7016 17136 Watching for file changes with StatReloader
+ERROR 2024-01-28 20:54:14,874 log 7016 13460 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 49, in create_good
+    count = request.POST['count']
+            ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'count'
+ERROR 2024-01-28 20:54:14,876 basehttp 7016 13460 "POST /add_good/ HTTP/1.1" 500 76765
+INFO 2024-02-01 19:05:57,490 autoreload 7144 11984 Watching for file changes with StatReloader
+INFO 2024-02-01 19:05:59,115 basehttp 7144 17516 "GET / HTTP/1.1" 200 117
+WARNING 2024-02-01 19:05:59,209 log 7144 17516 Not Found: /favicon.ico
+WARNING 2024-02-01 19:05:59,210 basehttp 7144 17516 "GET /favicon.ico HTTP/1.1" 404 3353
+INFO 2024-02-01 19:06:06,168 basehttp 7144 20692 "GET /add_good/ HTTP/1.1" 200 1215
+ERROR 2024-02-01 19:06:25,666 log 7144 22992 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 50, in create_good
+    image = request.POST['image']
+            ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'image'
+ERROR 2024-02-01 19:06:25,668 basehttp 7144 22992 "POST /add_good/ HTTP/1.1" 500 76972
+INFO 2024-02-01 19:10:09,508 autoreload 14760 21168 Watching for file changes with StatReloader
+INFO 2024-02-01 19:10:12,400 basehttp 14760 4064 "GET / HTTP/1.1" 200 117
+INFO 2024-02-01 19:10:17,307 basehttp 14760 4064 "GET /all_goods HTTP/1.1" 301 0
+INFO 2024-02-01 19:10:17,317 basehttp 14760 9848 "GET /all_goods/ HTTP/1.1" 200 69
+INFO 2024-02-01 19:10:26,192 basehttp 14760 9848 "GET /add_good/ HTTP/1.1" 200 1216
+ERROR 2024-02-01 19:10:39,370 log 14760 9848 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 50, in create_good
+    image = request.POST['image']
+            ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'image'
+ERROR 2024-02-01 19:10:39,375 basehttp 14760 9848 "POST /add_good/ HTTP/1.1" 500 76972
+WARNING 2024-02-01 20:00:32,358 log 14760 22664 Not Found: /favicon.ico
+WARNING 2024-02-01 20:00:32,361 basehttp 14760 22664 "GET /favicon.ico HTTP/1.1" 404 3353
+INFO 2024-02-01 20:05:01,752 autoreload 14760 21168 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-02-01 20:05:03,406 autoreload 22728 5372 Watching for file changes with StatReloader
+ERROR 2024-02-01 20:05:07,631 log 22728 21324 Internal Server Error: /add_good/
+Traceback (most recent call last):
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py", line 52, in create_good
+    good.save()
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1759, in get_db_prep_save
+    return connection.ops.adapt_decimalfield_value(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\backends\base\operations.py", line 574, in adapt_decimalfield_value
+    return utils.format_number(value, max_digits, decimal_places)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\venv\Lib\site-packages\django\db\backends\utils.py", line 304, in format_number
+    value = value.quantize(
+            ^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.InvalidOperation'>]
+ERROR 2024-02-01 20:05:07,636 basehttp 22728 21324 "POST /add_good/ HTTP/1.1" 500 136967
+INFO 2024-02-01 20:06:19,855 autoreload 22728 5372 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\forms.py changed, reloading.
+INFO 2024-02-01 20:06:20,561 autoreload 11072 1124 Watching for file changes with StatReloader
+INFO 2024-02-01 20:06:21,367 basehttp 11072 2780 "POST /add_good/ HTTP/1.1" 200 31
+INFO 2024-02-01 20:09:43,454 autoreload 11072 1124 C:\Users\HUAWEI\OneDrive\Рабочий стол\e_store\e_store\mainapp\views.py changed, reloading.
+INFO 2024-02-01 20:09:44,115 autoreload 17936 11592 Watching for file changes with StatReloader
+INFO 2024-02-01 20:09:45,200 basehttp 17936 17468 "POST /add_good/ HTTP/1.1" 200 31
+INFO 2024-02-01 20:10:50,105 basehttp 17936 12260 "GET /add_good/ HTTP/1.1" 200 1216
+INFO 2024-02-01 20:10:54,160 basehttp 17936 15372 "POST /add_good/ HTTP/1.1" 200 27
