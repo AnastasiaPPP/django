@@ -13,11 +13,6 @@ def index_page(request):
     return HttpResponse(text_i)
 
 
-def about_page(request):
-    text_a = '<h1>О нас<h1> <br> <p>всякий текст, много текста по заданию о нас</p>'
-    return HttpResponse(text_a)
-
-
 def get_orders(request, days):
     now = datetime.today() - timedelta(days=days)
     orders = Order.objects.filter(date__gte=now)

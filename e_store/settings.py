@@ -24,7 +24,6 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
@@ -33,7 +32,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 ALLOWED_HOSTS = ['192.168.0.101',
                  '127.0.0.1',
-                 'firstDjangoProject.pythonanywhere.com'
+                 'firstDjangoProject.pythonanywhere.com',
                  ]
 
 # Application definition
